@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assignment - CSS</title>
+
+    <link rel="stylesheet" href="secondStyles.css">
+</head>
+
+<body>
+    <h1><b> C S S </b></h1>
+
+    <!--Same note as homePage.html-->
+    
+    <button id="BtnForContext">Table of Context</button>
+
+    <nav id="sidebar" class="sidebar">
+        <a href="../index.html" class="btn-tele">Home</a>
+        <a href="../HTML_Page/firstPage.html" class="btn-tele">HTML</a>
+        <a href="../JavaScript_Page/thirdPage.html" class="btn-tele">JS</a>
+    </nav>
+
+    <br><br><br><br>
+
+    <table border="5" align="center">
+        <thead>
+            <tr>
+                <th>Term / Tag</th>
+
+                <th>Definition</th>
+
+                <th>Example / Usage</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><b>Selector</b></td>
+                <td>The tag you target to change.</td>
+                <td>h1 / p / div / form / basically anything</td>
+            </tr>
+
+            <tr>
+                <td><b>#</b></td>
+                <td>Used for target HTML id.</td>
+                <td>"p id=context1" in HTML goes to CSS as "#context1 {}"</td>
+            </tr>
+
+            <tr>
+                <td><b>.</b></td>
+                <td>Used for target HTML class.</td>
+                <td>"p class=context1" in HTML goes to CSS as ".context1 {}"</td>
+            </tr>
+
+            <tr>
+                <td><b>Selector: Descendant</b></td>
+                <td>Target specific applicable element(s) that's within another element(s). It will be like: "Selector1 (this space) Selector2 (this space) ~ "</td>
+                <td>e.g. "body div p {}" targets "p", that's inside of "div", that's also inside of "body".</td>
+            </tr>
+
+            <tr>
+                <td><b>Selector: Child</b></td>
+                <td>Target a selector that's directly connected to the another. It will be like: "Selector > Selector {}"</td>
+                <td>e.g. Let's say " div id="context1" " exists that include "ol", "#context1 > ol {}" targets "ol" list that's inside of "div" tag with id name "context1".</td>
+            </tr>
+
+            <tr>
+                <td><b>Selector: Adjacent</b></td>
+                <td>Target Selector(s) that's next to the another. It will be like: "Selector + Selector {}"</td>
+                <td>e.g. Let's say "p" exists just below "ul" list, and if want to target both ul and p, use "ul + p {}"</td>
+            </tr>
+
+            <tr>
+                <td><b>Selector: Pseudo-class</b></td>
+                <td>Used to cover situations that can't be solved with standard HTML. It will be like: "Selector:special-Pseudo-class-name {}"</td>
+                <td>:hover / :active / :link / :nth-child(n) / :not() / :lang() / and so on.</td>
+            </tr>
+            
+            <tr>
+                <td><b>color / background-color</b></td>
+                <td>changes the background color of entire website page. Color can be described as either Name (e.g. cyan / red / grey / light-yellow), Hexedecimal (e.g. #rrggbb), RGB (Red, Green, Blue (e.g. 255, 0, 0)) / RGBA (Red, Green, Blue, Alpha), HSL (Hue, Saturation, Lightness (e.g. 146, 45%, 27%)), or HSLA (Hue, Saturation, Lightness, Alpha).</td>
+                <td>(the background color on this page is light yellow if you look closely)</td>
+            </tr>
+            
+            <tr>
+                <td><b>px</b></td>
+                <td>Stands for pixel, a CSS fixed value measurement. Used as often as viewport series(v).</td>
+                <td>N/A</td>
+            </tr>
+            
+            <tr>
+                <td><b>vw / vh</b></td>
+                <td>Viewport series. vw is Viewport Width and vh is Viewport Height. Used to change length of width and height of certain component(s). 1 vw is 1% of total width of certain component(s) targetting on, same as 1 vh being 1% of total height.</td>
+                <td>N/A</td>
+            </tr>
+            
+            <tr>
+                <td><b>vmin / vmax</b></td>
+                <td>Used to change length of width and/or height but based on the device user is using. vmin changes based on the smaller width/height, while vmax is based on the larger width/height.</td>
+                <td>For example, if user uses Laptop/Desktop, the screen height is generally shorter than screen width. In that case, vmin will change width or height based on screen height, while vmax will be based on screen width.</td>
+            </tr>
+            
+            <tr>
+                <td><b>*</b></td>
+                <td>Used for cover EVERYthing within whole page. Very strong for debugging.</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="secondScripts.js"></script>
+</body>
+
+</html>

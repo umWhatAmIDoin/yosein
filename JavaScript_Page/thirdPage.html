@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assignment - JavaScript</title>
+
+    <link rel="stylesheet" href="thirdStyles.css">
+</head>
+
+<body>
+    <h1><b> J S / J a v a - S c r i p t </b></h1>
+
+    <!--Same note as homePage.html-->
+    
+    <button id="BtnForContext">Table of Context</button>
+
+    <nav id="sidebar" class="sidebar">
+        <a href="../index.html" class="btn-tele">Home</a>
+        <a href="../HTML_Page/firstPage.html" class="btn-tele">HTML</a>
+        <a href="../CSS_Page/secondPage.html" class="btn-tele">CSS</a>
+    </nav>
+
+    <br><br>
+
+    <table border="5" align="center">
+        <thead>
+            <tr>
+                <th>Term / Tag</th>
+
+                <th>Definition</th>
+
+                <th>Example / Usage</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><b>document.getElementsByTagName()</b></td>
+                <td>Find and target single HTML tag with specific tag name.</td>
+                <td>To target "p", then use "document.getElementsByTagName("p")"</td>
+            </tr>
+
+            <tr>
+                <td><b>document.getElementById()</b></td>
+                <td>Find and target single HTML tag with specific id name.</td>
+                <td>Let's say " p id="context1" " exists, then targets it as "document.getElementById("context1")"</td>
+            </tr>
+            
+            <tr>
+                <td><b>document.getElementsByClassName()</b></td>
+                <td>Find and target single HTML tag with specific class name.</td>
+                <td>Let's say " p class="context1" " exists, then targets it as "document.getElementsByClassName("context1")"</td>
+            </tr>
+            
+            <tr>
+                <td><b>console.log()</b></td>
+                <td>Display data in console. Console is not normal website display but rather within coding app itself, where console system exists separately like <i>Visual Studio</i> or <i>Codepen</i>.</td>
+                <td>N/A</td>
+            </tr>
+            
+            <tr>
+                <td><b>alert()</b></td>
+                <td>Display data with pop-up style. Usually works with interacting HTML elements in website.</td>
+                <td>Shows certain message(s) like "Hello World!" as a focused pop up generally in above, when pressed a certain HTML buttons or something similar.</td>
+            </tr>
+            
+            <tr>
+                <td><b>let</b></td>
+                <td>Creates variable. Can be changed.</td>
+                <td>let something = true;</td>
+            </tr>
+            
+            <tr>
+                <td><b>var</b></td>
+                <td>Creates variables. Can be changed, but only use it if certain variable must be supported on older system.</td>
+                <td>var something = "something1";</td>
+            </tr>
+            
+            <tr>
+                <td><b>const</b></td>
+                <td>Creates variables that stays same consistently. const means Constant.</td>
+                <td>things like PI is unchangeable and constant so it works. e.g. "const PI = 3.14159;"</td>
+            </tr>
+            
+            <tr>
+                <td><b>NaN</b></td>
+                <td>Means Not a Number. Used for Number data types.</td>
+                <td>N/A</td>
+            </tr>
+            
+            <tr>
+                <td><b>==</b></td>
+                <td>Equal To ~</td>
+                <td>(4 == "4") returns as true</td>
+            </tr>
+            
+            <tr>
+                <td><b>===</b></td>
+                <td>Equal Value and Equal Type</td>
+                <td>(3 === "3") returns as false</td>
+            </tr>
+
+            <tr>
+                <td><b>!=</b></td>
+                <td>Not Equal</td>
+                <td>N/A</td>
+            </tr>
+
+            <tr>
+                <td><b>!==</b></td>
+                <td>Not Equal Value or Not Equal Type</td>
+                <td>N/A</td>
+            </tr>
+
+            <tr>
+                <td><b>&&</b></td>
+                <td>Logical And</td>
+                <td>"If A is true and B is true", (A && B) returns as true. However if either one or both are false, (A && B) returns as false.</td>
+            </tr>
+
+            <tr>
+                <td><b>||</b></td>
+                <td>Logical Or</td>
+                <td>"If both A and B are false", (A || B) returns as false. Other cases return as true.</td>
+            </tr>
+
+            <tr>
+                <td><b>!</b></td>
+                <td>Logical Not</td>
+                <td>"If A is true", (!A) returns as false. Basically an opposite meaning of something.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="thirdScripts.js"></script>
+</body>
+
+</html>

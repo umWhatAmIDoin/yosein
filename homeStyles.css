@@ -1,0 +1,46 @@
+body {
+    background-color: lightyellow;
+}
+
+/* I know the grey rectangle part still looks awkward and weird especially when user hasn't clicked the button yet, but I guess it's not too bad */
+
+.sidebar {
+    width: 60px;
+    background-color: #333;
+    padding: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    height: auto;
+}
+
+.sidebar.open {
+    width: 200px;
+}
+
+.btn-tele {
+    display: block;
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Searched up from line 32 to 40, as I had problem in placing / properly functioning the button (aka same as comment I wrote on HTML part) */
+
+.sidebar:not(.open) .btn-tele {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.open .btn-tele {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.btn-tele:hover {
+    background-color: #777;
+}
